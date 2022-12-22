@@ -10,6 +10,11 @@
       "StackName": "amplify-1qr-dev-52854",
       "StackId": "arn:aws:cloudformation:ap-southeast-1:611714419758:stack/amplify-1qr-dev-52854/053aa8e0-8248-11ed-968e-060f3c289716",
       "AmplifyAppId": "d3d9a27sfk6q7n"
+    },
+    "categories": {
+      "auth": {
+        "1qr": {}
+      }
     }
   }
 }
