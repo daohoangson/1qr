@@ -1,0 +1,13 @@
+type QrCode @model
+  @auth(rules: [
+    { allow: public, provider: iam, operations: [read]},
+    { allow: owner }
+  ])
+{
+  id: ID! @primaryKey
+  owner: String @auth(rules: [{ allow: owner, operations: [read, delete] }]) @index(name: "byUser", queryField: "qrCodesByUser")
+
+  emvco: [String!]
+  momo: String
+  zalopay: String
+}
